@@ -14,12 +14,18 @@
 # The data source pulled from: https://world.openfoodfacts.org/data
 # Their API Documentation: https://openfoodfacts.github.io/openfoodfacts-server/api/
 
-# Anything else that's relevant: I (Nathan Sharpe) handled main to avoid merge conflicts while everyone else worked
-# within their own files in the data processing package.
+# Anything else that's relevant: 
 
-from data_processing_package.data_processing import *
+import json
+import requests
 
-if __name__ == "__main__":
-    api_data_processing = DataProcessing()
-    data = api_data_processing.fetchData()
-    print(data)
+class DataProcessing:
+    def fetchData(self):
+        """
+        Fetches JSON data from an the Open Food Facts API on the Nutella Ferrero product and returns it as a python dictionary
+        @return python_dict dict: The dictionary containing the parsed JSON data fetched from the API call
+        """
+        response = requests.get('https://world.openfoodfacts.org/api/v3/product/3017624010701.json')
+        json_string = response.content
+        python_dict = json.loads(json_string)
+        return python_dict

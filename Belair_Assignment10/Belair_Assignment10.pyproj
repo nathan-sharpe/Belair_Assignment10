@@ -27,7 +27,7 @@
     <Compile Include="data_processing_package\Ian.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="data_processing_package\Nate.py">
+    <Compile Include="data_processing_package\data_processing.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="data_processing_package\Zach.py">
