@@ -19,7 +19,11 @@
 
 from data_processing_package.data_processing import *
 
+from data_processing_package.Evan import *
+
 if __name__ == "__main__":
     api_data_processing = DataProcessing()
     data = api_data_processing.fetchData()
     print(data)
+
+    extract_and_print_data(data)
