@@ -6,8 +6,9 @@
 #Course #/Section:   IS4010-001
 #Semester/Year:   Spring 2025
 
-#Brief Description of the assignment:   
-#Brief Description of what this module does:    
+#Brief Description of the assignment: Fetch JSON data from an API, parse it into a python data structure, 
+# extract some insights from it and then convert to CSV format.
+#Brief Description of what this module does: Introduces us to working with JSON and how it is structured and fetched.
 
 #Citations: N/A
 
