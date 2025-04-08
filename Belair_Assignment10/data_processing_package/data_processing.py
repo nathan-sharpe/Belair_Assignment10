@@ -30,27 +30,4 @@ class DataProcessing:
         python_dict = json.loads(json_string)
         return python_dict
 
-    def extract_and_print_data(self, data):
-        """
-        Extracts interesting information from the fetched data and prints it in a friendly format.
-        @param data dict: The dictionary containing parsed JSON data from the API call.
-        """
-        if data:
-            # Extract interesting fields from the JSON data
-            product_name = data.get('product', {}).get('product_name', 'N/A')
-            barcode = data.get('code', 'N/A')
-            ingredients_text = data.get('product', {}).get('ingredients_text', 'N/A')
-            packaging = data.get('product', {}).get('packaging', 'N/A')
-            categories = data.get('product', {}).get('categories', 'N/A')
-            nutrition_grade = data.get('product', {}).get('nutrition_grades', 'N/A')
-
-            # Print the extracted data in a friendly format
-            print("Product Information:")
-            print(f"Name: {product_name}")
-            print(f"Barcode: {barcode}")
-            print(f"Ingredients: {ingredients_text}")
-            print(f"Packaging: {packaging}")
-            print(f"Categories: {categories}")
-            print(f"Nutrition Grade: {nutrition_grade}")
-        else:
-            print("No data available to extract.")
+    
