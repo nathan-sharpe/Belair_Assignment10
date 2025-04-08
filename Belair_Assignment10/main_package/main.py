@@ -20,6 +20,8 @@
 from data_processing_package.data_processing import *
 
 from data_processing_package.Evan import *
+from data_processing_package.Ian import *
+
 
 if __name__ == "__main__":
     # Instantiate the DataProcessing class and call the fetchData method on the class object
@@ -27,4 +29,6 @@ if __name__ == "__main__":
     data = api_data_processing.fetchData()
 
     # Extract and print data to the console
-    api_data_processing.extract_and_print_data(data)
+    extract_and_print_data(data)
+
+    extract_and_print_data_2(data)
