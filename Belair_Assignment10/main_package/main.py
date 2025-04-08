@@ -29,6 +29,7 @@ if __name__ == "__main__":
     data = api_data_processing.fetchData()
 
     # Extract and print data to the console
-    extract_and_print_data(data)
+    api_data_processing.extract_and_print_data(data)
+    api_data_processing.extract_and_print_data_2(data)
 
-    extract_and_print_data_2(data)
+    # Write results to CSV file
