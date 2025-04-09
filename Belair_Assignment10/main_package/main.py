@@ -33,6 +33,6 @@ if __name__ == "__main__":
     api_data_processing.extract_and_print_data(data)
     api_data_processing.extract_and_print_data_2(data)
 
-    # Write results to CSV file
+    # Write results to CSV file in the project folder as nutella_data.csv
     csv_converter = JsonToCsvConverter("nutella_data.csv")
     csv_converter.convert(data)
